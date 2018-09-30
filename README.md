@@ -1,2 +1,4 @@
-# PortafolioPlatzi
-Proyecto 2018 Desarrollo Web Online
+
+# PortfolioResponsiveDesign
+Proyecto 2018 Curso Responsive Design 
+
