@@ -49,6 +49,7 @@ a{
   background-color: #1D1D1B;
   color: #fff;
   height: 250px;
+  font-size: 16px;
 }
 
 .banner .container{
@@ -93,14 +94,12 @@ h2{
   padding: 1.5em 1.8em;
   border-radius: 5px;
   display: flex;
+  align-items: center;
   margin-bottom: 2em;
 }
 
 .project-info{
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   font-size: 17px;
 }
 
@@ -167,6 +166,15 @@ h2{
   padding: 1em;
   text-align: center;
   box-shadow:  0 4px 8px 0 rgba(0,0,0,.1);
+  font-size: 16px;
+}
+
+.event-title{
+  font-size: 1.2em;
+}
+
+.event-details{
+  font-size:0.9em
 }
 
 .contacts{
@@ -238,4 +246,108 @@ margin-bottom:1em;
 .twitter{
   background-image: url('../assets/twitter.svg');
 }
+
+.iconMenu{
+  color: #fff;
+  font-size: 1.6em;
+  position: relative;
+  z-index: 3;
+  display: none;
+}
+.show{
+  transform: translateX(0);
+}
+
+@media screen and (max-width:1024px){
+  .container{
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width:767px){
+
+  header{
+    height: auto;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#1D252C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: .3s ease;
+  }
+
+  nav ul{
+    display: block;
+    width: 100%;
+  }
+
+  nav li{
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    margin: 0 1em;
+    padding: 1em 0;
+  }
+
+  nav li:last-child{
+    border:none;
+  }
+
+  .banner{
+    font-size: 14px;
+  }
+
+  .banner-img{
+    display: none;
+  }
+
+  .banner-title{
+    width: auto;
+  }
+
+  .project-item{
+    display: block;
+  }
+
+  .project-info,.project-img{
+    width: auto;
+    text-align: center;
+  }
+
+  .project-info{
+    font-size: 15px;
+  }
+
+  .event-info{
+    font-size: 15px;
+  }
+
+  .events .container{
+    display: block;
+  }
+
+  .event-item{
+    width: auto;
+  }
+
+  .iconMenu{
+    display: block;
+  }
+}
+
+@media screen and (max-width:480px){
+  
+}
+
+@media screen and (max-width:320px){
+  
+}
+
+
 
