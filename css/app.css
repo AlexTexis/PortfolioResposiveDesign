@@ -339,10 +339,49 @@ margin-bottom:1em;
   .iconMenu{
     display: block;
   }
+
+  .contacts .container{
+    display: block;
+  }
+
+  .contacts form{
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .contacts input{
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  .sociales{
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width:480px){
-  
+
+  .container{
+    padding: 0 2em;
+  }
+
+  h2{
+    font-size:1em;
+  }
+
+  .project-info{
+    font-size: 13px;
+  }
+
+  .project-item:last-child{
+    margin: 0;
+  }
+  .social-item{
+    width:3em;
+    height: 3em;
+    padding: 2px;
+    background-size: 100%;
+  }
 }
 
 @media screen and (max-width:320px){
